@@ -1,14 +1,6 @@
 /* Normalize CSS Import */
 @import url("normalize.css");
 
-/* Table of contents */
-
-/* ---------
-#Classes
-#Layout
-    ##Header
------------*/
-
 /* #Classes */
 .fll {
     float: left;
@@ -16,6 +8,22 @@
 
 .flr {
     float: right;
+}
+
+/* #Typography */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+/* #Common elements */
+/* avoids header from covering heading when clicking on the anchor */
+.anchor { 
+    height: 95px;
+    margin-top: -95px;
+    visibility: hidden;
 }
 
 /* #Layout */
@@ -35,4 +43,38 @@
         background: #473a2d;
         height: 95px;
         padding: 25px 0 0 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+        /* ##Header Navigation */
+        .main-nav a {
+            display: inline-block;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .main-nav a:hover {
+            display: inline-block;
+            color: #fff;
+            background: #5b4d3b ;
+        }
+
+        .language-nav {
+            border-left: 1px solid #fff;
+            padding-left: 10px;
+            margin-left: 6px
+        }
+
+        .language-nav a {
+            padding: 12px 10px;
+        }
+
+/* #Sections */
+    /* ##Slideshow */
+    .slideshow {
+        margin-top: 95px;
     }
