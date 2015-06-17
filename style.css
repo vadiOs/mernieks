@@ -74,7 +74,19 @@ body {
         }
 
 /* #Sections */
+
     /* ##Slideshow */
     .slideshow {
         margin-top: 95px;
+        height: 600px;
     }
+
+    .slideshow .slide {
+        width: 100%;
+        display: none;
+    }
+
+    .slideshow .slide.active {
+        display: block;
+    }
+    
