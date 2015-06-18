@@ -14,9 +14,24 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 body {
+    background: url(img/body-bg.jpg) repeat;
+    color: #534c38;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif; 
 }
+
+h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
 
 /* #CSS Sprite */
 [class*="sprite-"] {
@@ -43,6 +58,14 @@ body {
     height: 95px;
     margin-top: -95px;
     visibility: hidden;
+}
+
+h1.section-header {
+    border-bottom: 1px dashed #736357;
+    padding-bottom: 15px;
+    color: #95782d;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* #Layout */
@@ -92,6 +115,28 @@ body {
         .language-nav a {
             padding: 12px 10px;
         }
+
+    /* ##Grid */
+    .col-2, .col-3 {
+        float: left;
+    }
+ 
+    .col-2 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 33.33333333%;
+    }
+
+    .row:after,.row:before {
+        display: table;
+        content: " "
+    }
+
+    .row:after {
+        clear: both;
+    }
 
 /* #Sections */
 
