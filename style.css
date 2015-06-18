@@ -18,6 +18,25 @@ body {
     font-family: 'Open Sans', sans-serif; 
 }
 
+/* #CSS Sprite */
+[class*="sprite-"] {
+    display: inline-block;
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.sprite-left-arrow {
+    background-position: 0 0;
+    height: 42px;
+    width: 25px;
+}
+
+.sprite-right-arrow {
+    background-position: -25px 0;
+    height: 42px;
+    width: 25px;
+}
+
 /* #Common elements */
 /* avoids header from covering heading when clicking on the anchor */
 .anchor { 
@@ -46,6 +65,7 @@ body {
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 10;
     }
 
         /* ##Header Navigation */
@@ -92,12 +112,34 @@ body {
     .slideshow .slide.active {
         display: block;
     }
+    
+    .slideshow .slideshow-inner {
+        position: absolute;
+        height: 600px;
+        width: 1200px;
+        left: 50%;
+        margin-left: -600px;
+    }
 
+    .slideshow .arrow {
+        position: absolute;
+        top: 285px;
+    }
+
+    .slideshow .arrow-left {
+        left: 0;
+    }
+
+    .slideshow .arrow-right {
+        right: 0;
+    }
+    
     .slideshow .site-intro {
         width: 1200px;
         margin: 0 auto;
         position: absolute;
         top: 255px;
+        left: 80px;
     }
 
     .slideshow .site-intro h1 {
@@ -121,3 +163,40 @@ body {
         padding: 12px 20px;
         margin: 0;
     }
+
+    .slideshow .pager {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 14px;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .slideshow .pager li {
+        display: inline-block;
+        border-radius: 50%;
+        background: rgba(206,187,137,0.5);
+        width: 14px;
+        height: 14px;
+        padding: 2px;
+        box-shadow: -1px 1px 1px 0px rgba(15, 15, 15, 0.09);
+        margin-right: 10px; 
+    }
+
+    .slideshow .pager li a {
+        text-indent: -9999px;
+        display: block;
+        background: #transparent;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .slideshow .pager li.active a {
+        background: rgba(255,255,255,0.4);
+    }
+
+    
