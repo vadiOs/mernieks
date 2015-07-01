@@ -30,8 +30,10 @@ h2 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
+    text-transform: uppercase;
+    color: #473a15;
+    margin: 0 0 20px 0;
 }
-
 
 /* #CSS Sprite */
 [class*="sprite-"] {
@@ -60,12 +62,22 @@ h2 {
     visibility: hidden;
 }
 
-h1.section-header {
+.section-header {
     border-bottom: 1px dashed #736357;
     padding-bottom: 15px;
     color: #95782d;
     text-transform: uppercase;
     text-align: center;
+}
+
+.divided-list {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.divided-list li {
+    
 }
 
 /* #Layout */
@@ -209,7 +221,7 @@ h1.section-header {
         margin: 0;
     }
 
-    .slideshow .pager {
+    .pager {
         position: absolute;
         width: 100%;
         text-align: center;
@@ -220,7 +232,7 @@ h1.section-header {
         line-height: 0;
     }
 
-    .slideshow .pager li {
+    .pager li {
         display: inline-block;
         border-radius: 50%;
         background: rgba(206,187,137,0.5);
@@ -231,7 +243,7 @@ h1.section-header {
         margin-right: 10px; 
     }
 
-    .slideshow .pager li a {
+    .pager li a {
         text-indent: -9999px;
         display: block;
         background: #transparent;
@@ -240,8 +252,11 @@ h1.section-header {
         border-radius: 50%;
     }
 
-    .slideshow .pager li.active a {
+    .pager .active a {
         background: rgba(255,255,255,0.4);
     }
+
+    /* ##Services */
+    
 
     
