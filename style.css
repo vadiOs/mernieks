@@ -54,6 +54,24 @@ h2 {
     width: 25px;
 }
 
+.sprite-geodesy {
+    background-position: -50px 0;
+    height: 53px;
+    width: 56px;
+}
+
+.sprite-surveying {
+    background-position: -106px 0;
+    height: 53px;
+    width: 42px;
+}
+
+.sprite-land-marking {
+    background-position: -148px 0;
+    height: 53px;
+    width: 64px;
+}
+
 /* #Common elements */
 /* avoids header from covering heading when clicking on the anchor */
 .anchor { 
@@ -68,16 +86,6 @@ h2 {
     color: #95782d;
     text-transform: uppercase;
     text-align: center;
-}
-
-.divided-list {
-    list-style-type: none;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.divided-list li {
-    
 }
 
 /* #Layout */
@@ -257,6 +265,32 @@ h2 {
     }
 
     /* ##Services */
-    
+    .divided-list {
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 0;
+    }
+
+    .divided-list li:after {
+        width: 55px;
+        height: 1px;
+        background: rgba(0,0,0,0.2);
+        display: block;
+        content: "";
+        margin: 10px 0;
+    }
+
+    .divided-list li:last-child:after {
+        display: none;
+    }
+
+    .services .col-3 {
+        padding-right: 20px;
+    }
+
+    .services .col-text {
+        margin-left: 80px;
+    }
 
     
