@@ -130,12 +130,12 @@ h2 {
     font-weight: 600;
 }
 
-section.dark {
+.section-emphesized {
     background: url(img/dark-bg.jpg);
     color: #fff;
 }
 
-section.dark .section-header {
+.section-emphesized .section-header {
     color: #c7a457;
     border-bottom-color: #c7a457;
 }
@@ -348,6 +348,19 @@ section.dark .section-header {
     }
 
     /* ##About Us */
+    .profile {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    
+    .profile hr {
+        border: 0;
+        border-top: 1px solid #8d7b66;
+        opacity: 0.4;
+        width: 336px;
+    }
+
     .profile-intro {
         text-align: center;
     }
@@ -357,13 +370,6 @@ section.dark .section-header {
         font-weight: 300;
         color: #c7a457;
         font-size: 36px;
-    }
-
-    .profile hr {
-        border: 0;
-        border-top: 1px solid #8d7b66;
-        opacity: 0.4;
-        width: 336px;
     }
 
     .profile-contact a {
