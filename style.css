@@ -11,7 +11,7 @@
 }
 
 /* #Typography */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
 
 body {
     background: url(img/body-bg.jpg) repeat;
@@ -74,18 +74,70 @@ h2 {
 
 /* #Common elements */
 /* avoids header from covering heading when clicking on the anchor */
-.anchor { 
+.anchored {
+    position: relative;
+}
+
+.anchor {
+    position: absolute;
     height: 95px;
-    margin-top: -95px;
+    top: -95px;
     visibility: hidden;
 }
 
 .section-header {
     border-bottom: 1px dashed #736357;
-    padding-bottom: 15px;
+    padding: 15px 0;
     color: #95782d;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 0 25px 0;
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+}
+
+.table th {
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid #dfd9cf;
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.table tr:nth-child(odd) td {
+    background: #f2ebe1;
+}
+
+.table tr:last-child td {
+    border-bottom: 1px solid #dfd9cf
+}
+
+.table + .note {
+    margin-left: 10px;
+}
+
+.pricing-table th:last-child,
+.pricing-table td:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.dark {
+    background: url(img/dark-bg.jpg);
+    color: #fff;
+}
+
+section.dark .section-header {
+    color: #c7a457;
+    border-bottom-color: #c7a457;
 }
 
 /* #Layout */
@@ -143,13 +195,19 @@ h2 {
  
     .col-2 {
         width: 50%;
+        padding: 0 20px;
     }
 
     .col-3 {
         width: 33.33333333%;
+        padding: 0 20px;
     }
 
-    .row:after,.row:before {
+    .row {
+        margin: 0 -20px;
+    }
+
+    .row:after, .row:before {
         display: table;
         content: " "
     }
@@ -285,12 +343,66 @@ h2 {
         display: none;
     }
 
-    .services .col-3 {
-        padding-right: 20px;
-    }
-
     .services .col-text {
         margin-left: 80px;
     }
 
-    
+    /* ##About Us */
+    .profile-intro {
+        text-align: center;
+    }
+
+    .profile-intro h2 {
+        text-transform: none;
+        font-weight: 300;
+        color: #c7a457;
+        font-size: 36px;
+    }
+
+    .profile hr {
+        border: 0;
+        border-top: 1px solid #8d7b66;
+        opacity: 0.4;
+        width: 336px;
+    }
+
+    .profile-contact a {
+        color: #c7a457;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+    }
+
+    .sertificates {
+        background: #624e36;
+        padding: 20px 55px;
+        text-align: center;
+    }
+
+    .sertificates li {
+        color: #eadfcd;
+        font-size: 13px;
+        line-height: 18px;
+        list-style-type: none;
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        text-align:left;
+    }
+
+    .sertificates li:before {
+        content: '';
+        background: url(img/sprite.png);
+        background-position: -212px 0;
+        display: inline-block;
+        width: 28px;
+        height: 40px;
+        vertical-align: middle;
+        margin: 7px 15px 0 0;
+    }
+
+    .sertificates .sertificate-title {
+        display:inline-block;
+        vertical-align: middle;
+    }
+
