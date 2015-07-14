@@ -72,6 +72,12 @@ h2 {
     width: 64px;
 }
 
+.sprite-handshake {
+    background-position: -148px 0;
+    height: 53px;
+    width: 64px;
+}
+
 /* #Common elements */
 /* avoids header from covering heading when clicking on the anchor */
 .anchored {
@@ -412,3 +418,32 @@ h2 {
         vertical-align: middle;
     }
 
+    /* ##Clients */
+    .logo-container {
+        text-align: justify;
+        font-size: 0;
+        margin: -20px -40px -21px;
+    }
+
+    .logo-container:after {
+        content: '';
+        width: 250px;
+        height: 1px;
+        display:inline-block;
+    }
+
+    .logo-container .client-logo {
+        display: inline-block;
+        padding: 20px 40px;
+        vertical-align: middle;
+    }
+
+    /* ##Contacts */
+    .map-container {
+        border: 7px solid #97804e;
+        height: 294px;
+        width: 372px;
+        margin-bottom: 20px;
+    }
+
+    
