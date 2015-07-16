@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Mērniecība - Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="ppt-button"></div>
+    <div class="ppt"></div>
     <div id="to-top"></div>
     <header class="main-header">
         <div class="container">
@@ -295,6 +298,15 @@
         </div>
     </section>
     <!-- /.contacts -->
+    <script>
+        function ppt() {
+            $(".ppt").toggleClass("hidden");
+        }
+        
+        $(".ppt-button").click(function(){
+            ppt();
+        });
+    </script>
 </body>
 
 </html>
