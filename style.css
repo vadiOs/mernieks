@@ -35,6 +35,16 @@ h2 {
     margin: 0 0 20px 0;
 }
 
+address {
+    font-style: normal;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* #CSS Sprite */
 [class*="sprite-"] {
     display: inline-block;
@@ -73,9 +83,9 @@ h2 {
 }
 
 .sprite-handshake {
-    background-position: -148px 0;
-    height: 53px;
-    width: 64px;
+    background-position: -240px 0;
+    height: 60px;
+    width: 58px;
 }
 
 /* #Common elements */
@@ -446,4 +456,24 @@ h2 {
         margin-bottom: 20px;
     }
 
+    .contact-details {
+        text-align: center;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #c7a457;
+    }
+
+    .contact-details .sprite-handshake {
+        margin-bottom: 10px;
+    }
+
+    .contact-details .phone,
+    .contact-details .phone a{
+        color: #eacc8b;
+        text-decoration: none;
+    }
+
+    .contact-form {
     
+    }
