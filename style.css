@@ -107,7 +107,7 @@ fieldset {
     /* ##Blocks' styles */
     .section-header {
         border-bottom: 1px dashed #736357;
-        padding: 15px 0;
+        padding: 13px 0;
         color: #95782d;
         text-transform: uppercase;
         text-align: center;
@@ -228,7 +228,7 @@ fieldset {
         z-index: 10;
     }
 
-        /* ##Header Navigation */
+        /* ###Header Navigation */
                 
 
         .main-nav a {
@@ -240,19 +240,28 @@ fieldset {
         }
 
         .main-nav a:hover {
-            display: inline-block;
-            color: #fff;
             background: #5b4d3b ;
         }
 
         .language-nav {
             border-left: 1px solid #fff;
-            padding-left: 10px;
-            margin-left: 6px
+            margin: -10px 0 0 20px;
+            height: 61px;
+            padding: 19px 0 0 34px;
         }
 
         .language-nav a {
-            padding: 12px 10px;
+            font-size: 13px;
+            padding: 0;
+            margin-right: 8px;
+        }
+
+        .language-nav a:last-child {
+            margin-right: 0;
+        }
+
+        .language-nav a:hover {
+            background: none;
         }
 
     /* ##Grid */
@@ -283,12 +292,17 @@ fieldset {
         clear: both;
     }
 
+    /* ##Sections */
+    .site-section {
+        padding: 10px 0 35px 0;
+    }
+
 /* #Sections */
 
     /* ##Slideshow */
     .slideshow {
         margin-top: 95px;
-        height: 600px;
+        height: 594px;
         overflow: hidden;
         position: relative;
     }
@@ -328,8 +342,8 @@ fieldset {
         width: 1200px;
         margin: 0 auto;
         position: absolute;
-        top: 255px;
-        left: 80px;
+        top: 254px;
+        left: 83px;
     }
 
     .slideshow .site-intro h1 {
@@ -339,7 +353,7 @@ fieldset {
         font-size: 44px;
         line-height: 60px;
         font-weight: 400;
-        padding: 8px 20px;
+        padding: 6px 20px;
         margin: 0 0 20px 0;
     }
 
@@ -358,7 +372,7 @@ fieldset {
         position: absolute;
         width: 100%;
         text-align: center;
-        bottom: 14px;
+        bottom: 20px;
         margin: 0;
         padding: 0;
         font-size: 0;
@@ -390,6 +404,10 @@ fieldset {
     }
 
     /* ##Services */
+    .services {
+        background: url(img/services-bg.png) no-repeat 50% 112px;
+    }
+
     .divided-list {
         list-style-type: none;
         font-size: 16px;
@@ -412,6 +430,10 @@ fieldset {
 
     .services .col-text {
         margin-left: 80px;
+    }
+
+    .services .section-header {
+        margin-bottom: 52px;
     }
 
     /* ##About Us */
@@ -477,6 +499,7 @@ fieldset {
     .sertificates .sertificate-title {
         display:inline-block;
         vertical-align: middle;
+        max-width: 190px;
     }
 
     /* ##Clients */
@@ -554,6 +577,7 @@ fieldset {
         z-index: 1000;
         opacity: 0.5;
         margin-left: -600px;
+        cursor: pointer;
     }
 
     .ppt.hidden {
@@ -567,4 +591,5 @@ fieldset {
         top: 0;
         left: 0;
         z-index: 1000;
+        cursor: pointer;
     }
