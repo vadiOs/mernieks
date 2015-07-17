@@ -11,7 +11,7 @@
 }
 
 /* #Typography */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 body {
     background: url(img/body-bg.jpg) repeat;
@@ -110,6 +110,10 @@ fieldset {
         visibility: hidden;
     }
 
+    .note {
+        font-style: italic;
+    }
+
     /* ##Blocks' styles */
     .section-header {
         border-bottom: 1px dashed #736357;
@@ -148,11 +152,11 @@ fieldset {
         font-weight: 600;
         text-align: left;
         border-bottom: 1px solid #dfd9cf;
-        padding: 10px;
+        padding: 11px 10px;
     }
 
     .table td {
-        padding: 12px 10px;
+        padding: 13px 10px;
     }
 
     .table tr:nth-child(odd) td {
@@ -171,6 +175,12 @@ fieldset {
     .pricing-table td:last-child {
         font-size: 18px;
         font-weight: 600;
+    }
+
+    .pricing-table th:first-child,
+    .pricing-table td:first-child {
+        font-size: 16px;
+        font-weight: 400;
     }
 
     /* ##Forms */
@@ -462,6 +472,11 @@ fieldset {
 
     .services .section-header {
         margin-bottom: 52px;
+    }
+
+    /* ##Prices */
+    .prices .table td {
+        font-size: 14px;
     }
 
     /* ##About Us */
