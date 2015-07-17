@@ -89,6 +89,12 @@ fieldset {
     width: 58px;
 }
 
+.sprite-to-top-arrow {
+    background-position: 0 -45px;
+    width: 30px;
+    height: 15px;
+}
+
 /* #Common elements */
 
     /* ##Anchor functionality
@@ -146,7 +152,7 @@ fieldset {
     }
 
     .table td {
-        padding: 10px;
+        padding: 12px 10px;
     }
 
     .table tr:nth-child(odd) td {
@@ -228,6 +234,27 @@ fieldset {
         z-index: 10;
     }
 
+    .main-header .container {
+        position: relative;
+    }
+
+    .to-top-button {
+        background: rgba(191,179,153,0.54);
+        display: block;
+        position: fixed;
+        bottom: 150px;
+        border: 2px solid #fff;
+        margin-left: 1300px;
+        height: 55px;
+        width: 55px;
+        cursor: pointer;
+    }
+
+    .to-top-button .sprite-to-top-arrow {
+        margin: 18px 0 0 10px;
+        cursor: pointer;
+    }
+
         /* ###Header Navigation */
                 
 
@@ -262,6 +289,7 @@ fieldset {
 
         .language-nav a:hover {
             background: none;
+            color: #f9e09e;
         }
 
     /* ##Grid */
